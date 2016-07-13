@@ -1,6 +1,6 @@
 <?php
 
-namespace Cyberhouse\Newsauthor\Domain\Model;
+namespace SIWA\Newsttaddress\Domain\Model;
 
 /*
  * This file is part of the TYPO3 project.
@@ -18,28 +18,28 @@ namespace Cyberhouse\Newsauthor\Domain\Model;
 /**
  * Class News
  *
- * @package Cyberhouse\Newsauthor\Domain\Model
+ * @package SIWA\Newsttaddress\Domain\Model
  */
 class News extends \GeorgRinger\News\Domain\Model\News {
 
 	/**
-	 * @var \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
+	 * @var \TYPO3\TtAddress\Domain\Model\Address
 	 *
 	 */
-	protected $feAuthor;
+	protected $address;
 
 	/**
-	 * @param \TYPO3\CMS\Extbase\Domain\Model\FrontendUser $feAuthor
+	 * @param \TYPO3\TtAddress\Domain\Model\Address $address
 	 */
-	public function setFeAuthor($feAuthor) {
-		$this->feAuthor = $feAuthor;
+	public function setAddress($address) {
+		$this->address = $address;
 	}
 
 	/**
-	 * @return \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
+	 * @return \TYPO3\TtAddress\Domain\Model\Address
 	 */
-	public function getFeAuthor() {
-		return $this->feAuthor;
+	public function getAddress() {
+		return $this->address;
 	}
 
 }

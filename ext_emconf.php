@@ -1,12 +1,12 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'FE-User as newsauthor',
-	'description' => 'Add a relation to fe_users to select a frontenduser as news author.',
+	'title' => 'tt_address as news location',
+	'description' => 'Add a relation to tt_address to select an address as news location.',
 	'category' => 'be',
-	'author' => 'Georg Ringer',
+	'author' => 'Gerald Aistleitner',
 	'author_email' => '',
-	'author_company' => 'Cyberhouse GmbH',
+	'author_company' => 'SIWA Online GmbH',
 	'shy' => '',
 	'priority' => '',
 	'module' => '',
@@ -24,6 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
 			'fluid' => '',
 			'typo3' => '6.2.12-7.9.99',
 			'news' => '3.2.0',
+			'tt_address' => '3.*'
 		),
 		'conflicts' => array(),
 		'suggests' => array(),
