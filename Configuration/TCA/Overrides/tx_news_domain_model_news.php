@@ -4,14 +4,14 @@ if (!defined('TYPO3_MODE')) {
 }
 
 $tempColumns = array(
-	'fe_author' => array(
+	'address' => array(
 		'exclude' => 1,
-		'label' => 'LLL:EXT:newsauthor/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.fe_author',
+		'label' => 'LLL:EXT:newsauthor/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.address',
 		'config' => array(
 			'type' => 'select',
 			'internal_type' => 'db',
-			'allowed' => 'fe_users',
-			'foreign_table' => 'fe_users',
+			'allowed' => 'tt_address',
+			'foreign_table' => 'tt_address',
 			'foreign_table_where' => '',
 			'size' => 1,
 			'minitems' => 0,
@@ -24,4 +24,4 @@ $tempColumns = array(
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $tempColumns, TRUE);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news', 'fe_author');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news', 'address');
